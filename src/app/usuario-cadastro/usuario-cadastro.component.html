@@ -1,0 +1,70 @@
+<div class="bg-system-light lter b-b wrapper-md ng-scope">
+	<h1 class="m-n font-thin h3">Cadastro de Paciente</h1>
+</div>
+
+
+<div class="wrapper-md">
+	<div class="row">
+		<div class="col-lg-12 col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<form #formCadastro="ngForm" class="form-validation" role="form">
+            <fieldset>
+							<div class="row">
+								<div class="col-lg-3 col-md-3">
+									<div class="form-group">
+										<label>Nome: </label>
+										<input class="form-control input-sm" placeholder="Nome" name="nome" type="text" [(ngModel)]="paciente.Nome">
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3">
+									<div class="form-group">
+										<label>Telefone: </label>
+										<input class="form-control input-sm" placeholder="Telefone" name="telefone" type="tel" required [(ngModel)]="paciente.Telefone">
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3">
+									<div class="form-group">
+										<label>Peso(kg): </label>
+										<input class="form-control input-sm" placeholder="Peso" name="peso" type="number" [(ngModel)]="paciente.Peso">
+									</div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+									<div class="form-group">
+										<label>Altura(cm): </label>
+										<input class="form-control input-sm" placeholder="Altura" name="altura" type="number" [(ngModel)]="paciente.Altura">
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3">
+									<div class="form-group">
+										<label>Doenças Pré-existentes: </label>
+										<input class="form-control input-sm" placeholder="Doenças" name="doencas" type="text" [(ngModel)]="paciente.Doencas">
+									</div>
+								</div>
+              </div>
+              <div class="col-lg-3 col-md-3">
+                <div class="form-group">
+                  <label>Endereço: </label>
+                  <input class="form-control input-sm" placeholder="Endereço" name="endereco" type="text" [(ngModel)]="paciente.Endereco">
+                </div>
+              </div>
+						</fieldset>
+						<fieldset>
+							<div class="row">
+								<div class="col-md-12 col-lg-12">
+									<button class="btn m-b-xs btn-sm btn-primary-autoglass btn-addon" type="submit" (click)="cadastrarPaciente(paciente)">
+                                        <i class="fa fa-save"></i> Salvar
+                                    </button>
+									<button class="btn m-b-xs btn-sm btn-default btn-addon" (click)="limparCampos(formCadastro)">
+                                        <i class="fa fa-undo"></i>Limpar campos
+                                    </button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

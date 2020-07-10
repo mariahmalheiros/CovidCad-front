@@ -1,0 +1,22 @@
+<div *ngFor="let item of listaPacientes">
+  <div class="card">
+    <div class="row">
+      <span>Nome: {{ item.Nome }}</span>
+    </div>
+    <div class="row">
+      <span>Telefone: {{ item.Telefone }} </span>
+    </div>
+    <div class="row">
+      <span>Peso: {{ item.Peso }} </span>
+    </div>
+    <div class="row">
+      <span>Altura: {{ item.Altura }} </span>
+    </div>
+    <div class="row">
+      <span>Doenças pré-existentes: {{ item.Doencas }}</span>
+    </div>
+    <div class="row">
+      <span>Endereço: {{ item.Endereco }} </span>
+    </div>
+  </div>
+</div>
